@@ -1,0 +1,7 @@
+# MAVProxy telemetry logs (hundreds of MB)
+logs/
+*.tlog
+*.tlog.raw
+__pycache__/
+# machine-specific: USB path of the rover R4 recorded by flash_rc.sh
+.rx_board

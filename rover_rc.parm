@@ -1,0 +1,13 @@
+# ROVER//RC vehicle params (ArduRover 4.7). Apply with apply_params.py
+# (or MAVProxy: param load ~/rover_rc/rover_rc.parm).
+#
+# Accept RC overrides / GCS heartbeats only from the RC (sysid 200).
+# Was 1 = the rover's own id, which made the Cube drop every override.
+MAV_GCS_SYSID      200
+# Override expires 1 s after the last RC packet (was 3 s).
+RC_OVERRIDE_TIME   1
+# No RC heartbeat for 2 s -> FS_ACTION.
+FS_GCS_ENABLE      1
+FS_GCS_TIMEOUT     2
+# 2 = Hold.
+FS_ACTION          2
